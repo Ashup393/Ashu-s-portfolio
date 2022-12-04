@@ -6,7 +6,7 @@
  
   "private": true,
  
-  "homepage": "https://github.com/Ashup393/portfolio.git",
+  "homepage": "https://github.com/Ashup393/Ashu-s-portfolio.git",
  
   "dependencies": {
  
@@ -63,9 +63,6 @@
   "start": "react-scripts start",
  
    
-
- 
-   
   "build": "react-scripts build",
  
    
@@ -76,6 +73,8 @@
  
    
   "predeploy": "npm run build",
+ 
+   
   "deploy": "gh-pages -d build"
  
   },

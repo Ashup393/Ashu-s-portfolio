@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./App.css";
-import { HashRouter,Routes,Route } from "react-router-dom";
+import {BrowserRouter,Routes,Route } from "react-router-dom";
 import Homepage from "./Components/Homepage";
 import Aboutme from "./Components/Aboutme";
 import Project from "./Components/Project";
@@ -14,7 +14,7 @@ import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="Homepage" >
-    <HashRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
        <Route path='/' element ={<Homepage />} />
        {/* <Route path='Aboutme' element ={<Aboutme />} /> */}
@@ -28,7 +28,7 @@ function App() {
        {/* <Route path="*" element={<Nomatch/>} /> */}
       </Routes>
       
-    </HashRouter>
+    </BrowserRouter>
    
     {/* <Hireinfo /> */}
     {/* <DynamicRoute /> */}
