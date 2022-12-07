@@ -14,7 +14,9 @@ import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="Homepage" >
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL || ''}>
+
+
       <Routes>
        <Route path='/' element ={<Homepage />} />
        {/* <Route path='Aboutme' element ={<Aboutme />} /> */}
